@@ -1,0 +1,25 @@
+<%- include('partials/header.ejs') %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section id="Addsection">
+        <h1>Compose</h1>
+        <form action="/Addsection" method="post">
+            <div class="mb-3">
+              <label >Title</label>
+              <input type="text" class="form-control" name="Post_title" >
+            </div>
+            <div class="mb-3">
+              <label >Post</label>
+            <textarea name="Post_post" class="form-control" cols="5" rows="8"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+    </section>
+</body>
+</html>

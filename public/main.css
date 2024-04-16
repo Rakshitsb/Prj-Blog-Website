@@ -1,0 +1,39 @@
+body{
+    font-family: 'Poppins', sans-serif;
+  
+}
+#Home,#Addsection,#post,#Aboutme{
+    padding: 3% 15%;
+}
+* {
+    padding: 0px;
+    margin: 0px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    height: 75px;
+    background-color: rgb(15, 15, 15);
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+.left{
+    color: white;
+    font-size: 1.5rem;
+    
+}
+.right ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.right{
+    padding-top: 10px;
+}
+

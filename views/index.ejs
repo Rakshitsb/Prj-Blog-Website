@@ -1,0 +1,32 @@
+<%- include('partials/header.ejs') %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+</head>
+<body>
+    <section id="Home">
+        <h1>Home Page</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam ipsum, exercitationem voluptates quis cumque labore eligendi laborum sapiente nisi obcaecati esse rem eveniet, modi fuga ullam incidunt. Odit, ea corrupti!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt eius ullam ratione assumenda modi nihil corporis consequuntur esse voluptatum numquam aspernatur sapiente fugiat, beatae adipisci itaque laboriosam at atque? Consectetur deserunt dolorum inventore unde officiis reiciendis. Impedit velit odio recusandae.
+        </p>
+        <% for (var i = 0; i<array.length; i++) { %>
+            <hr>
+            <h2>
+                <%= array[i].pp; %>
+            </h2>
+            <p>
+                <%= array[i].pc.substring(0,100)+"  ...."; %>
+                <a style="color: blue;" href="/posts/<%= array[i].pp %>">Read more</a>
+            </p>
+            
+            <% } %>
+
+    </section>
+    
+</body>
+</html>
